@@ -51,6 +51,7 @@ app.post("/" , (req,res) => {
     request.end();
 
 })
-app.listen(3000 , ()=>{
-    console.log("Server running on Port : 3000");
+const port = process.env.PORT || 9001;
+app.listen(port , ()=>{
+    console.log("Server running on Port : 9001");
 })
